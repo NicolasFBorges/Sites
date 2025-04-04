@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #1B49A6;
+}
+
+header {
+    background-color: #0511F2;
+    padding: 20px;
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.banner {
+    background-color: #D94814;
+    color: #fff;
+    padding: 50px;
+    text-align: center;
+}
+
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.produto {
+    display: inline-block;
+    margin: 10px;
+    padding: 20px;
+    background-color: #F2E205;
+    color: #0511F2;
+}
+
+form input, form textarea {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+button {
+    background-color: #F20505;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #0511F2;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
