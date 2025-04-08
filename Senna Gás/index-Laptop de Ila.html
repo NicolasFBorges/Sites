@@ -193,7 +193,7 @@
                     <span class="dot" aria-label="Slide 3"></span>
                 </div>
                 <div class="more-recipes">
-                    <a href="receitas.html" class="btn-more" rel="noopener noreferrer">
+                    <a href="receitas.html" class="btn-more" target="_blank" rel="noopener noreferrer">
                         Ver mais receitas <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
@@ -204,7 +204,7 @@
                 <iframe 
                     src="https://www.instagram.com/senna_gas/embed"
                     width="850"
-                    height="1350"
+                    height="1250"
                     style="border:none;overflow:hidden"
                     scrolling="no"
                     allowtransparency="true"
@@ -222,19 +222,19 @@
                     <i class="fas fa-fire"></i>
                     <h3>Economia de Gás</h3>
                     <p>Aprenda a usar seu fogão de forma mais eficiente e economize gás.</p>
-                    <a href="dicas/economia.html" class="btn-tip">Saiba mais</a>
+                    <a href="#" class="btn-tip">Saiba mais</a>
                 </div>
                 <div class="tip-card">
                     <i class="fas fa-shield-alt"></i>
                     <h3>Segurança</h3>
                     <p>Dicas importantes para garantir a segurança no uso do gás.</p>
-                    <a href="dicas/seguranca.html" class="btn-tip">Saiba mais</a>
+                    <a href="#" class="btn-tip">Saiba mais</a>
                 </div>
                 <div class="tip-card">
                     <i class="fas fa-tools"></i>
                     <h3>Manutenção</h3>
                     <p>Como manter seu fogão e botijão em perfeito estado.</p>
-                    <a href="dicas/manutencao.html" class="btn-tip">Saiba mais</a>
+                    <a href="#" class="btn-tip">Saiba mais</a>
                 </div>
             </div>
         </section>
@@ -287,14 +287,14 @@
                 slideIndex = slides.length;
             }
             showSlides();
-            slideInterval = setInterval(showSlides, 10000);
+            slideInterval = setInterval(showSlides, 5000);
         }
 
         function currentSlide(n) {
             clearInterval(slideInterval);
             slideIndex = n;
             showSlides();
-            slideInterval = setInterval(showSlides, 10000);
+            slideInterval = setInterval(showSlides, 5000);
         }
 
         // Event listeners
@@ -335,7 +335,7 @@
                 clearInterval(slideInterval);
                 slideIndex = 0;
                 showSlides();
-                slideInterval = setInterval(showSlides, 10000);
+                slideInterval = setInterval(showSlides, 5000);
             });
         });
     </script>

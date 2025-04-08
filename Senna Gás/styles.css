@@ -773,3 +773,217 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
+/* Estilos para a página de manutenção */
+.maintenance-tips {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.maintenance-tips h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+.maintenance-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.maintenance-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.maintenance-item {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.maintenance-item:hover {
+    transform: translateY(-5px);
+}
+
+.maintenance-item i {
+    font-size: 2.5rem;
+    color: #e74c3c;
+    margin-bottom: 1rem;
+}
+
+.maintenance-item h3 {
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.maintenance-item p {
+    color: #666;
+    line-height: 1.5;
+}
+
+.cleaning-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.cleaning-step, .cleaning-tips {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.cleaning-step h3, .cleaning-tips h3 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.cleaning-step ol, .cleaning-tips ul {
+    color: #666;
+    line-height: 1.8;
+    padding-left: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .cleaning-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .maintenance-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Estilos para a página de economia */
+.economy-tips {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.economy-tips h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+.economy-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.economy-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.economy-item {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.economy-item:hover {
+    transform: translateY(-5px);
+}
+
+.economy-item i {
+    font-size: 2.5rem;
+    color: #e74c3c;
+    margin-bottom: 1rem;
+}
+
+.economy-item h3 {
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.economy-item p {
+    color: #666;
+    line-height: 1.5;
+}
+
+.habits-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.habits-item {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.habits-item h3 {
+    color: #333;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #e74c3c;
+}
+
+.habits-item ul {
+    color: #666;
+    line-height: 1.8;
+    padding-left: 1.5rem;
+}
+
+.comparison-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.comparison-step, .comparison-tips {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.comparison-step h3, .comparison-tips h3 {
+    color: #333;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #e74c3c;
+}
+
+.comparison-step ol, .comparison-tips ul {
+    color: #666;
+    line-height: 1.8;
+    padding-left: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .comparison-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .economy-grid, .habits-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+.maintenance-icon {
+    width: 50px;
+    height: 50px;
+}

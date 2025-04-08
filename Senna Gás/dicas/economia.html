@@ -1,15 +1,13 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Dicas de economia de gás - Aprenda a economizar gás no seu dia a dia">
+    <meta name="description" content="Dicas de economia no uso do gás de cozinha">
     <title>Economia de Gás - Senna Gás</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -19,131 +17,106 @@
         <nav aria-label="Navegação principal">
             <ul>
                 <li><a href="../index.html">Home</a></li>
-                <li><a href="../index.html#produtos">Produtos</a></li>
                 <li><a href="../index.html#sobre">Sobre Nós</a></li>
-                <li><a href="../index.html#contato">Contato</a></li>
+                <a href="https://api.whatsapp.com/send?phone=5564999095817" target="_blank">Contato</a>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section class="economy-tips">
-            <h1>Dicas de Economia de Gás</h1>
-            
-            <div class="economy-content">
-                <article class="economy-article">
-                    <h2>Como Economizar Gás no Dia a Dia</h2>
-                    
-                    <div class="economy-grid">
-                        <div class="economy-item">
-                            <i class="fas fa-clock"></i>
-                            <h3>Planejamento</h3>
-                            <p>Planeje suas refeições para cozinhar várias coisas ao mesmo tempo.</p>
-                        </div>
-                        
-                        <div class="economy-item">
-                            <i class="fas fa-utensils"></i>
-                            <h3>Panelas Adequadas</h3>
-                            <p>Use panelas do tamanho certo para a quantidade de comida.</p>
-                        </div>
-                        
-                        <div class="economy-item">
-                            <i class="fas fa-water"></i>
-                            <h3>Água</h3>
-                            <p>Use apenas a quantidade necessária de água para cozinhar.</p>
-                        </div>
-                        
-                        <div class="economy-item">
-                            <i class="fas fa-fire"></i>
-                            <h3>Chama</h3>
-                            <p>Mantenha a chama azul e ajuste-a ao tamanho da panela.</p>
-                        </div>
+    <main class="economy-tips">
+        <h1>Economia no Uso do Gás</h1>
+        
+        <div class="economy-content">
+            <article>
+                <h2>Dicas de Economia</h2>
+                <div class="economy-grid">
+                    <div class="economy-item">
+                        <i class="fas fa-fire"></i>
+                        <h3>Chama Adequada</h3>
+                        <p>Use a chama no tamanho correto para cada tipo de preparo, evitando desperdício.</p>
                     </div>
-                </article>
-
-                <article class="economy-tips-detail">
-                    <h2>Dicas Detalhadas</h2>
-                    
-                    <div class="tips-list">
-                        <div class="tip-detail">
-                            <h3>1. Uso Eficiente do Fogão</h3>
-                            <ul>
-                                <li>Mantenha as bocas do fogão limpas</li>
-                                <li>Use panelas com fundo plano</li>
-                                <li>Tampe as panelas durante o cozimento</li>
-                                <li>Desligue o fogo alguns minutos antes do fim do cozimento</li>
-                            </ul>
-                        </div>
-
-                        <div class="tip-detail">
-                            <h3>2. Manutenção Preventiva</h3>
-                            <ul>
-                                <li>Verifique regularmente as conexões</li>
-                                <li>Mantenha o regulador em bom estado</li>
-                                <li>Substitua as mangueiras conforme recomendado</li>
-                                <li>Limpe regularmente os queimadores</li>
-                            </ul>
-                        </div>
-
-                        <div class="tip-detail">
-                            <h3>3. Hábitos Inteligentes</h3>
-                            <ul>
-                                <li>Descongele alimentos naturalmente</li>
-                                <li>Use a panela de pressão quando possível</li>
-                                <li>Prepare grandes quantidades e congele</li>
-                                <li>Evite abrir a porta do forno desnecessariamente</li>
-                            </ul>
-                        </div>
+                    <div class="economy-item">
+                        <i class="fas fa-utensils"></i>
+                        <h3>Panelas Certas</h3>
+                        <p>Utilize panelas com fundo plano e tamanho adequado ao queimador.</p>
                     </div>
-                </article>
-
-                <article class="economy-calculator">
-                    <h2>Calculadora de Economia</h2>
-                    <div class="calculator-content">
-                        <p>Use nossa calculadora para estimar sua economia mensal:</p>
-                        <div class="calculator-form">
-                            <label for="current-consumption">Consumo atual (botijões/mês):</label>
-                            <input type="number" id="current-consumption" min="1" max="10">
-                            
-                            <label for="economy-percentage">Porcentagem de economia esperada:</label>
-                            <input type="range" id="economy-percentage" min="10" max="50" value="20">
-                            <span id="percentage-value">20%</span>
-                            
-                            <button id="calculate-btn">Calcular Economia</button>
-                            
-                            <div id="result" class="calculator-result">
-                                <p>Sua economia mensal estimada: <span id="economy-result">R$ 0,00</span></p>
-                            </div>
-                        </div>
+                    <div class="economy-item">
+                        <i class="fas fa-clock"></i>
+                        <h3>Tempo de Cozimento</h3>
+                        <p>Desligue o fogo alguns minutos antes do término do cozimento.</p>
                     </div>
-                </article>
-            </div>
-        </section>
+                    <div class="economy-item">
+                        <i class="fas fa-tint"></i>
+                        <h3>Água Quente</h3>
+                        <p>Use água já aquecida para cozinhar, reduzindo o tempo no fogo.</p>
+                    </div>
+                </div>
+            </article>
+
+            <article>
+                <h2>Hábitos Eficientes</h2>
+                <div class="habits-content">
+                    <div class="habits-item">
+                        <h3>Na Cozinha</h3>
+                        <ul>
+                            <li>Mantenha as panelas tampadas durante o cozimento</li>
+                            <li>Descongele os alimentos antes de cozinhar</li>
+                            <li>Use a pressão da panela de pressão quando possível</li>
+                            <li>Evite abrir o forno durante o preparo</li>
+                        </ul>
+                    </div>
+                    <div class="habits-item">
+                        <h3>No Fogão</h3>
+                        <ul>
+                            <li>Limpe regularmente os queimadores</li>
+                            <li>Verifique se as chamas estão azuis e uniformes</li>
+                            <li>Não use o fogão para aquecer o ambiente</li>
+                            <li>Desligue o gás quando não estiver usando</li>
+                        </ul>
+                    </div>
+                    <div class="habits-item">
+                        <h3>No Aquecedor</h3>
+                        <ul>
+                            <li>Regule a temperatura adequadamente</li>
+                            <li>Desligue quando não estiver em uso</li>
+                            <li>Mantenha a manutenção em dia</li>
+                            <li>Use apenas quando necessário</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+            <article>
+                <h2>Comparativo de Consumo</h2>
+                <div class="comparison-content">
+                    <div class="comparison-step">
+                        <h3>Economia Mensal</h3>
+                        <ol>
+                            <li>Panelas tampadas: até 30% de economia</li>
+                            <li>Chama adequada: até 25% de economia</li>
+                            <li>Manutenção em dia: até 20% de economia</li>
+                            <li>Hábitos eficientes: até 15% de economia</li>
+                        </ol>
+                    </div>
+                    <div class="comparison-tips">
+                        <h3>Benefícios</h3>
+                        <ul>
+                            <li>Redução na conta de gás</li>
+                            <li>Maior durabilidade do botijão</li>
+                            <li>Menor impacto ambiental</li>
+                            <li>Segurança no uso</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+        </div>
     </main>
 
     <footer>
-        <p>© 2025 Senna Gás - Todos os direitos reservados.</p>
+        <p>&copy; 2025 Senna Gás. Todos os direitos reservados.</p>
+        <a href="https://api.whatsapp.com/send?phone=5564999095817" class="whatsapp-button" target="_blank">
+            <i class="fab fa-whatsapp"></i> Fale Conosco
+        </a>
     </footer>
-
-    <a href="https://bit.ly/WhatsApp_SennaGas" class="whatsapp-button" target="_blank" rel="noopener noreferrer" aria-label="Fale conosco pelo WhatsApp">
-        <i class="fab fa-whatsapp"></i>
-    </a>
-
-    <script>
-        // Calculadora de economia
-        document.getElementById('economy-percentage').addEventListener('input', function() {
-            document.getElementById('percentage-value').textContent = this.value + '%';
-        });
-
-        document.getElementById('calculate-btn').addEventListener('click', function() {
-            const consumption = parseFloat(document.getElementById('current-consumption').value);
-            const percentage = parseFloat(document.getElementById('economy-percentage').value);
-            
-            if (consumption && !isNaN(consumption)) {
-                const economy = (consumption * 100 * percentage) / 100;
-                document.getElementById('economy-result').textContent = `R$ ${economy.toFixed(2)}`;
-            }
-        });
-    </script>
 </body>
 </html> 
