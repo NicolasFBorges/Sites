@@ -277,6 +277,188 @@ footer {
     text-align: center;
 }
 
+.recipes-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.recipe-category {
+    padding: 0.5rem 1rem;
+    background-color: var(--light-bg);
+    color: var(--text-color);
+    text-decoration: none;
+    border-radius: 20px;
+    transition: var(--transition);
+    font-weight: 500;
+}
+
+.recipe-category:hover,
+.recipe-category.active {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+/* Recipe Meta */
+.recipe-meta {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+}
+
+.recipe-meta span {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-color);
+}
+
+.recipe-meta i {
+    color: var(--primary-color);
+}
+
+/* Recipe Tips */
+.recipe-tips {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background-color: rgba(14, 99, 70, 0.1);
+    border-radius: 8px;
+}
+
+.recipe-tips h4 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.recipe-tips p {
+    color: var(--text-color);
+    font-style: italic;
+}
+
+/* More Recipes Button */
+.more-recipes {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.btn-more {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.8rem 1.5rem;
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 25px;
+    transition: var(--transition);
+}
+
+.btn-more:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-2px);
+}
+
+/* Tips Section */
+.tips-section {
+    padding: 4rem 2rem;
+    background-color: var(--light-bg);
+}
+
+.tips-section h2 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 3rem;
+    font-size: 2rem;
+}
+
+.tips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tip-card {
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    text-align: center;
+    transition: var(--transition);
+}
+
+.tip-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.tip-card i {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.tip-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.tip-card p {
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+}
+
+.btn-tip {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 20px;
+    transition: var(--transition);
+}
+
+.btn-tip:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .recipes-links {
+        gap: 0.5rem;
+    }
+
+    .recipe-category {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.9rem;
+    }
+
+    .recipe-meta {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .tips-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .recipe-meta span {
+        font-size: 0.9rem;
+    }
+
+    .tip-card {
+        padding: 1.5rem;
+    }
+}
+
 /* Slideshow */
 .slideshow-container {
     position: relative;
@@ -439,5 +621,155 @@ footer {
 
     .recipe-details {
         padding: 0.8rem;
+    }
+}
+
+/* Estilos para a página de segurança */
+.safety-tips {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.safety-tips h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 2rem;
+}
+
+.safety-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.safety-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.safety-item {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.safety-item:hover {
+    transform: translateY(-5px);
+}
+
+.safety-item i {
+    font-size: 2.5rem;
+    color: #e74c3c;
+    margin-bottom: 1rem;
+}
+
+.safety-item h3 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.safety-item p {
+    color: #7f8c8d;
+}
+
+.checklist-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.checklist-item {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.checklist-item h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #e74c3c;
+}
+
+.checklist-item ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.checklist-item li {
+    padding: 0.5rem 0;
+    color: #7f8c8d;
+    display: flex;
+    align-items: center;
+}
+
+.checklist-item li:before {
+    content: "✓";
+    color: #27ae60;
+    margin-right: 0.5rem;
+}
+
+.emergency-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.emergency-step, .emergency-contacts {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.emergency-step h3, .emergency-contacts h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #e74c3c;
+}
+
+.emergency-step ol {
+    padding-left: 1.5rem;
+    color: #7f8c8d;
+}
+
+.emergency-step li {
+    padding: 0.5rem 0;
+}
+
+.emergency-contacts ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.emergency-contacts li {
+    padding: 0.5rem 0;
+    color: #7f8c8d;
+    display: flex;
+    align-items: center;
+}
+
+.emergency-contacts li:before {
+    content: "📞";
+    margin-right: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .safety-tips {
+        padding: 1rem;
+    }
+    
+    .safety-grid, .checklist-content, .emergency-content {
+        grid-template-columns: 1fr;
     }
 }

@@ -62,9 +62,16 @@
 
         <section class="social-content" aria-label="Conteúdo social">
             <div class="recipes" id="receitas">
-                <h2>Receitas Especiais</h2>
+                <h2>Dicas e Receitas</h2>
+                <div class="recipes-links">
+                    <a href="#receitas" class="recipe-category active" data-category="todas">Todas</a>
+                    <a href="#receitas" class="recipe-category" data-category="carnes">Carnes</a>
+                    <a href="#receitas" class="recipe-category" data-category="massas">Massas</a>
+                    <a href="#receitas" class="recipe-category" data-category="veganas">Veganas</a>
+                    <a href="#receitas" class="recipe-category" data-category="doces">Doces</a>
+                </div>
                 <div class="slideshow-container">
-                    <div class="slide fade">
+                    <div class="slide fade" data-category="veganas">
                         <img src="png receitas/pizza vegana.png" alt="Pizza Vegana" loading="lazy">
                         <div class="slide-content">
                             <div class="slide-text">
@@ -72,6 +79,11 @@
                                 <p>Uma deliciosa pizza vegana preparada com gás de qualidade</p>
                             </div>
                             <div class="recipe-details">
+                                <div class="recipe-meta">
+                                    <span class="recipe-time"><i class="far fa-clock"></i> 45 min</span>
+                                    <span class="recipe-difficulty"><i class="fas fa-utensils"></i> Fácil</span>
+                                    <span class="recipe-servings"><i class="fas fa-users"></i> 4 porções</span>
+                                </div>
                                 <h4>Ingredientes:</h4>
                                 <ul>
                                     <li>2 xícaras de farinha de trigo</li>
@@ -90,10 +102,14 @@
                                     <li>Abra a massa e adicione os ingredientes</li>
                                     <li>Asse em forno a gás por 20 minutos</li>
                                 </ol>
+                                <div class="recipe-tips">
+                                    <h4>Dicas do Chef:</h4>
+                                    <p>Para uma massa mais crocante, pré-aqueça o forno a gás por 15 minutos antes de assar.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="slide fade">
+                    <div class="slide fade" data-category="carnes">
                         <img src="png receitas/bobó de camarão.png" alt="Bobó de Camarão" loading="lazy">
                         <div class="slide-content">
                             <div class="slide-text">
@@ -101,6 +117,11 @@
                                 <p>Um clássico da culinária brasileira preparado com gás</p>
                             </div>
                             <div class="recipe-details">
+                                <div class="recipe-meta">
+                                    <span class="recipe-time"><i class="far fa-clock"></i> 1h 30min</span>
+                                    <span class="recipe-difficulty"><i class="fas fa-utensils"></i> Médio</span>
+                                    <span class="recipe-servings"><i class="fas fa-users"></i> 6 porções</span>
+                                </div>
                                 <h4>Ingredientes:</h4>
                                 <ul>
                                     <li>500g de camarão limpo</li>
@@ -120,10 +141,14 @@
                                     <li>Incorpore a mandioca amassada</li>
                                     <li>Adicione o leite de coco e cozinhe por 15 minutos</li>
                                 </ol>
+                                <div class="recipe-tips">
+                                    <h4>Dicas do Chef:</h4>
+                                    <p>Para um sabor mais intenso, refogue os temperos em fogo médio no gás antes de adicionar os outros ingredientes.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="slide fade">
+                    <div class="slide fade" data-category="carnes">
                         <img src="png receitas/frango assado.png" alt="Frango Assado" loading="lazy">
                         <div class="slide-content">
                             <div class="slide-text">
@@ -131,6 +156,11 @@
                                 <p>Frango assado perfeito graças ao gás de qualidade</p>
                             </div>
                             <div class="recipe-details">
+                                <div class="recipe-meta">
+                                    <span class="recipe-time"><i class="far fa-clock"></i> 2h</span>
+                                    <span class="recipe-difficulty"><i class="fas fa-utensils"></i> Fácil</span>
+                                    <span class="recipe-servings"><i class="fas fa-users"></i> 4 porções</span>
+                                </div>
                                 <h4>Ingredientes:</h4>
                                 <ul>
                                     <li>1 frango inteiro</li>
@@ -148,6 +178,10 @@
                                     <li>Asse em forno a gás por 1 hora</li>
                                     <li>Vire o frango na metade do tempo</li>
                                 </ol>
+                                <div class="recipe-tips">
+                                    <h4>Dicas do Chef:</h4>
+                                    <p>Para um frango mais suculento, mantenha a temperatura do forno a gás constante durante todo o processo de assamento.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -158,6 +192,11 @@
                     <span class="dot" aria-label="Slide 1"></span>
                     <span class="dot" aria-label="Slide 2"></span>
                     <span class="dot" aria-label="Slide 3"></span>
+                </div>
+                <div class="more-recipes">
+                    <a href="https://www.rodrigogas.com.br/receitas" class="btn-more" target="_blank" rel="noopener noreferrer">
+                        Ver mais receitas <i class="fas fa-arrow-right"></i>
+                    </a>
                 </div>
             </div>
 
@@ -174,6 +213,30 @@
                     loading="lazy"
                     title="Feed do Instagram da Senna Gás">
                 </iframe>
+            </div>
+        </section>
+
+        <section class="tips-section">
+            <h2>Dicas de Uso do Gás</h2>
+            <div class="tips-grid">
+                <div class="tip-card">
+                    <i class="fas fa-fire"></i>
+                    <h3>Economia de Gás</h3>
+                    <p>Aprenda a usar seu fogão de forma mais eficiente e economize gás.</p>
+                    <a href="#" class="btn-tip">Saiba mais</a>
+                </div>
+                <div class="tip-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Segurança</h3>
+                    <p>Dicas importantes para garantir a segurança no uso do gás.</p>
+                    <a href="#" class="btn-tip">Saiba mais</a>
+                </div>
+                <div class="tip-card">
+                    <i class="fas fa-tools"></i>
+                    <h3>Manutenção</h3>
+                    <p>Como manter seu fogão e botijão em perfeito estado.</p>
+                    <a href="#" class="btn-tip">Saiba mais</a>
+                </div>
             </div>
         </section>
     </main>
@@ -246,6 +309,36 @@
 
         // Inicia o slideshow quando a página carregar
         document.addEventListener('DOMContentLoaded', startSlideshow);
+
+        // Filtro de categorias
+        const categories = document.querySelectorAll('.recipe-category');
+        const recipeSlides = document.querySelectorAll('.slide');
+
+        categories.forEach(category => {
+            category.addEventListener('click', (e) => {
+                e.preventDefault();
+                const selectedCategory = category.dataset.category;
+
+                // Atualiza categoria ativa
+                categories.forEach(c => c.classList.remove('active'));
+                category.classList.add('active');
+
+                // Filtra slides
+                recipeSlides.forEach(slide => {
+                    if (selectedCategory === 'todas' || slide.dataset.category === selectedCategory) {
+                        slide.style.display = 'block';
+                    } else {
+                        slide.style.display = 'none';
+                    }
+                });
+
+                // Reinicia slideshow
+                clearInterval(slideInterval);
+                slideIndex = 0;
+                showSlides();
+                slideInterval = setInterval(showSlides, 5000);
+            });
+        });
     </script>
 </body>
 </html>

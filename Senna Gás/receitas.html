@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Receitas especiais da Senna Gás - Aprenda a preparar deliciosos pratos usando gás de qualidade">
+    <title>Receitas - Senna Gás</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="index.html" aria-label="Senna Gás - Página Inicial">
+            <img src="SENNA_GAS_LOGO.png" alt="Senna Gás" width="180" height="60" loading="eager">
+        </a>
+        <nav aria-label="Navegação principal">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#produtos">Produtos</a></li>
+                <li><a href="index.html#sobre">Sobre Nós</a></li>
+                <li><a href="index.html#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="recipes-page">
+            <h1>Nossas Receitas</h1>
+            <div class="recipes-filters">
+                <button class="filter-btn active" data-filter="todas">Todas</button>
+                <button class="filter-btn" data-filter="carnes">Carnes</button>
+                <button class="filter-btn" data-filter="massas">Massas</button>
+                <button class="filter-btn" data-filter="veganas">Veganas</button>
+                <button class="filter-btn" data-filter="doces">Doces</button>
+            </div>
+
+            <div class="recipes-grid">
+                <article class="recipe-card" data-category="veganas">
+                    <img src="png receitas/pizza vegana.png" alt="Pizza Vegana" loading="lazy">
+                    <div class="recipe-info">
+                        <h2>Pizza Vegana</h2>
+                        <div class="recipe-meta">
+                            <span><i class="far fa-clock"></i> 45 min</span>
+                            <span><i class="fas fa-utensils"></i> Fácil</span>
+                            <span><i class="fas fa-users"></i> 4 porções</span>
+                        </div>
+                        <p>Uma deliciosa pizza vegana preparada com gás de qualidade</p>
+                        <a href="receitas/pizza-vegana.html" class="btn-recipe">Ver Receita</a>
+                    </div>
+                </article>
+
+                <article class="recipe-card" data-category="carnes">
+                    <img src="png receitas/bobó de camarão.png" alt="Bobó de Camarão" loading="lazy">
+                    <div class="recipe-info">
+                        <h2>Bobó de Camarão</h2>
+                        <div class="recipe-meta">
+                            <span><i class="far fa-clock"></i> 1h 30min</span>
+                            <span><i class="fas fa-utensils"></i> Médio</span>
+                            <span><i class="fas fa-users"></i> 6 porções</span>
+                        </div>
+                        <p>Um clássico da culinária brasileira preparado com gás</p>
+                        <a href="receitas/bobo-camarao.html" class="btn-recipe">Ver Receita</a>
+                    </div>
+                </article>
+
+                <article class="recipe-card" data-category="carnes">
+                    <img src="png receitas/frango assado.png" alt="Frango Assado" loading="lazy">
+                    <div class="recipe-info">
+                        <h2>Frango Assado</h2>
+                        <div class="recipe-meta">
+                            <span><i class="far fa-clock"></i> 2h</span>
+                            <span><i class="fas fa-utensils"></i> Fácil</span>
+                            <span><i class="fas fa-users"></i> 4 porções</span>
+                        </div>
+                        <p>Frango assado perfeito graças ao gás de qualidade</p>
+                        <a href="receitas/frango-assado.html" class="btn-recipe">Ver Receita</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Senna Gás - Todos os direitos reservados.</p>
+    </footer>
+
+    <a href="https://bit.ly/WhatsApp_SennaGas" class="whatsapp-button" target="_blank" rel="noopener noreferrer" aria-label="Fale conosco pelo WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script>
+        // Filtro de receitas
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const recipeCards = document.querySelectorAll('.recipe-card');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                // Add active class to clicked button
+                button.classList.add('active');
+
+                const filter = button.dataset.filter;
+
+                recipeCards.forEach(card => {
+                    if (filter === 'todas' || card.dataset.category === filter) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html> 
