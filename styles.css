@@ -987,3 +987,78 @@ footer {
     width: 50px;
     height: 50px;
 }
+
+/* Delivery and Location Section */
+.delivery-location {
+    padding: 4rem 2rem;
+    background-color: var(--white); /* Match other sections like products */
+    display: flex;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 4rem auto; /* Add margin like products */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    align-items: flex-start; /* Align items at the start vertically */
+}
+
+.delivery-info,
+.location-map {
+    flex: 1; /* Allow both divs to grow and shrink */
+    min-width: 300px; /* Minimum width before wrapping */
+}
+
+.delivery-location h2 {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.delivery-location p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+}
+
+.btn-pedido {
+    display: inline-flex; /* Use inline-flex for alignment */
+    align-items: center; /* Vertically align icon and text */
+    gap: 0.5rem; /* Space between icon and text */
+    background-color: #25d366; /* WhatsApp green */
+    color: var(--white);
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: var(--transition);
+    border: none;
+    cursor: pointer;
+}
+
+.btn-pedido:hover {
+    background-color: #128C7E; /* Darker WhatsApp green */
+    transform: translateY(-2px);
+    box-shadow: var(--shadow);
+}
+
+.location-map iframe {
+    width: 100%; /* Make iframe responsive */
+    max-width: 600px; /* Optional: limit max width */
+    height: 450px;
+    border-radius: 8px; /* Add slight rounding */
+    margin-top: 1rem;
+}
+
+.location-map p small {
+    display: block; /* Ensure it takes its own line */
+    margin-top: 0.5rem;
+    font-size: 0.9em;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .delivery-location {
+        flex-direction: column;
+    }
+    
+    .delivery-info, .location-map {
+        flex: 1;
+    }
+}
